@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-(your local changes)
-=======
-(remote changes)
->>>>>>> origin/main
+# Student Registration System
+This is my project initialized from GitHub.
