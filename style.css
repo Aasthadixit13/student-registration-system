@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Navbar */
+nav {
+    background: #005bb5;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #cce0ff;
+}
+
+/* Box design */
+.box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #0073e6;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/* Form styling */
+form label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 12px;
+    font-size: 15px;
+}
+
+th {
+    background: #0073e6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    form input,
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .box {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* ===== Footer Styling ===== */
+footer {
+    background-color: #005bb5;
+    /* Dark background */
+    color: #f1f1f1;
+    /* Light text */
+    text-align: center;
+    /* Centered text */
+    padding: 15px 10px;
+    /* Spacing */
+    font-size: 14px;
+    /* Default font size */
+    margin-top: 30px;
+    /* Space above footer */
+
+}
+
+footer p {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+/* ===== Responsive Design ===== */
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+    footer {
+        padding: 12px 8px;
+        font-size: 12px;
+        /* Slightly smaller text on very small screens */
+    }
+
+    footer p {
+        line-height: 1.4;
+    }
+}
+
+/* For tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    footer {
+        font-size: 13px;
+        padding: 14px 12px;
+    }
+}
+
+/* For larger desktops */
+@media (min-width: 1024px) {
+    footer {
+        font-size: 15px;
+        /* Slightly bigger text on big screens */
+    }
+}
